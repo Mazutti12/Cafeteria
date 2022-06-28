@@ -1,0 +1,306 @@
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.icone-header{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.ao-redor{
+    align-content: center;
+    width: 100vw;
+
+}
+
+.image-homepage{
+    background-size: cover;
+    border: #d3ad7f solid 1px;
+    max-width: 650px;
+    max-height: 427px;
+}
+
+.text-homepage{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;    
+    text-align: center;
+    color: white;
+}
+
+.topicos-homepage{
+    display: inline-flex;
+    align-items: center;
+    margin: 60px 40px 30px 40px;
+    
+}
+p{
+    margin-left: 3%;
+} 
+.topicos-homepageblock{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 60px 40px 30px 40px;
+   
+}
+.h2-homepage{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    margin: 20px;
+    display: block;
+    color: #d3ad7f;
+}
+.carousel{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+ 
+}
+
+.slide-image{
+    width: 700px;
+    height: 477px;
+}
+
+.p-margin{
+    margin: 40px 80px 20px 80px;
+}
+
+.icone-footer{
+    display: inline-flex;
+
+}
+
+.icone-caffee-footer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icone-footer-right{
+    height: 23px;
+    width: auto;
+    margin-right: 15px;
+
+}
+
+.size-footer{
+    position: relative;
+    height: 50px;
+    margin-top: 60px;
+}
+.div-center{
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.cardapio-image{
+    width: 286px;
+    height: 191px;
+}
+
+.card-cardapio-image{
+    display: inline-flex;
+    margin: 0 auto;
+    margin: 30px;
+    border: #d3ad7f solid 2px;
+    
+}
+
+.button-favorite{
+    border-radius: 50%;
+    color: white;
+    background-color: lightgray;
+    border: solid 1px #d3ad7f;
+}
+
+/* Código para alterar */
+
+
+
+form label,input,button {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#036;
+    font-weight:bold;
+    float:left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+th, td {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+tr:nth-child(odd){background-color: lightgray}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:24px;
+    color: #4CAF50;
+    text-align: center;
+}
+fieldset {
+    border: 0;
+}
+
+label {
+    margin-bottom: 0.2em;
+    color: #000;
+    display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+input:focus {
+    background: #F8F8FF;
+}
+
+#cadastro{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+#listagem{
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+#pesquisar{
+    padding: 20px;
+}
+.botao {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+ 
+.botao:hover {
+    background-color: #006400;
+}
+ 
+
+.erro{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: #FF0000;
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sucesso{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: #10CD23;
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+.aviso{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background: #D4C713;
+    color: #FFF;
+    padding: 5px;
+    margin: 5px;
+
+    
+}
+
+#pesquisafsm-caixa {
+
+    width:90%;
+}
+#pesquisafsm-botao {
+    
+    border: 1px solid #222;
+    color: #eee; 
+    background: #4CAF50;
+    margin-left: -3px;
+    margin-top: 8px;
+    color:#fff;
+    padding:6px 15px 20px 22px;
+    border:0 none;
+    font-weight:bold;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+#pesquisafsm-botao:hover {
+    cursor: pointer;
+    background:  #006400;
+}
+
+.margin-btn{
+    margin-left: 32px;
+}
+
+.text-principal{
+    color: #ffc101;
+}
+
+.login-container{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.distancia{
+    margin-top: 20px;
+}
+.margin-lado{
+    margin-left: 430px;
+}
+.conteiner-forum{
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.textarea-class{
+    border: 1px solid ;
+    width: 100%;
+}
