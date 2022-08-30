@@ -4,17 +4,17 @@
     <header class="p-3 bg-dark text-white sticky">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
-                <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ">
-                    <img src="/coffee/style/img/icone_header.png" alt="icone da imagem" class="icone-header"><svg
+                <a href="{{route('home')}}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ">
+                    <img src="style/img/icone_header.png" alt="icone da imagem" class="icone-header"><svg
                         class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                         <use xlink:href="#bootstrap" />
                     </svg>
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
-                    <li><a href="index.php" class="nav-link px-2 text-principal">Início</a></li>
-                    <li><a href="#about_session" class="nav-link px-2 text-white ">About</a></li>
+                    <li><a href="{{route('home')}}" class="nav-link px-2 text-principal">Início</a></li>
+                    <li><a href="{{route('home')}}#about_session" class="nav-link px-2 text-white ">About</a></li>
                     <li><a href="{{route('cardapio')}}" class="nav-link px-2 text-white ">Cardápio</a></li>
-                    <li><a href="forum.php" class="nav-link px-2 text-white ">Fórum</a></li>
+                    <li><a href="{{route('forum')}}" class="nav-link px-2 text-white ">Fórum</a></li>
                 </ul>
                 <div class="text-end">
                     <a href="login.php" type="button" class="btn btn-outline-light me-2">Login</a>

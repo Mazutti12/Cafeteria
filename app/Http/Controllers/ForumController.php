@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CardapioController extends Controller
+class ForumController extends Controller
 {
     public function index(){
         try{
-            return view('cardapio');
+            return view('forum');
 
         }catch (\Exception $e){
             return $e->getMessage('Página indisponível no momento!');

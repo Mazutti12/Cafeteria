@@ -1,6 +1,6 @@
 <footer class="p-3 bg-dark text-white size-footer">
     <div class="icone-footer">
-        <a href="index.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <a href="{{route('home')}}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
             <img src="/coffee/style/img/icone_header.png" alt="icone do caffee" class="icone-caffee-footer"><svg
                 class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                 <use xlink:href="#bootstrap" />

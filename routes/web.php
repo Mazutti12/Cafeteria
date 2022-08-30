@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CardapioController;
+use App\Http\Controllers\ForumController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/cardapio', [CardapioController::class, 'index'])->name('cardapio');
+Route::get('/forum', [ForumController::class, 'index'])->name('forum');
+Route::get('/login', [LoginController::class, 'index'])->name('register');
+Route::get('/register', [RegisterController::class, 'index'])->name('login');
