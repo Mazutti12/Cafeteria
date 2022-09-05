@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="style/stylecss.css">
 
     <title>Bem-Vindo</title>
+
+    @yield("script")
 </head>
 
 <body>

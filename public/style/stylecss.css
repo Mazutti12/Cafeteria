@@ -26,7 +26,7 @@ body{
 
 .text-homepage{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;    
+    font-size: 17px;
     text-align: center;
     color: white;
 }
@@ -35,18 +35,18 @@ body{
     display: inline-flex;
     align-items: center;
     margin: 60px 40px 30px 40px;
-    
+
 }
 p{
     margin-left: 3%;
-} 
+}
 .topicos-homepageblock{
     position: relative;
     display: block;
     margin: 0 auto;
     text-align: center;
     margin: 60px 40px 30px 40px;
-   
+
 }
 .h2-homepage{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -60,7 +60,7 @@ p{
     width: 50%;
     height: auto;
     margin-top: 60px;
- 
+
 }
 
 .slide-image{
@@ -111,7 +111,7 @@ p{
     margin: 0 auto;
     margin: 30px;
     border: #d3ad7f solid 2px;
-    
+
 }
 
 .button-favorite{
@@ -180,7 +180,7 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    
+
 }
 
 input:focus {
@@ -211,13 +211,13 @@ input:focus {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
+
 }
- 
+
 .botao:hover {
     background-color: #006400;
 }
- 
+
 
 .erro{
     font-family:Arial, Helvetica, sans-serif;
@@ -245,7 +245,7 @@ input:focus {
     padding: 5px;
     margin: 5px;
 
-    
+
 }
 
 #pesquisafsm-caixa {
@@ -253,9 +253,9 @@ input:focus {
     width:90%;
 }
 #pesquisafsm-botao {
-    
+
     border: 1px solid #222;
-    color: #eee; 
+    color: #eee;
     background: #4CAF50;
     margin-left: -3px;
     margin-top: 8px;
@@ -283,14 +283,17 @@ input:focus {
     margin: 0 auto;
     width: 50%;
     height: auto;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 60px;
+    height: 100vh;
 }
 .distancia{
     margin-top: 20px;
 }
 .margin-lado{
-    margin-left: 430px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }
 .conteiner-forum{
     margin: 0 auto;
@@ -298,7 +301,7 @@ input:focus {
     height: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    
+
 }
 .textarea-class{
     border: 1px solid ;

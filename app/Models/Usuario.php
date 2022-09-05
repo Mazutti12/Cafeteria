@@ -2,24 +2,28 @@
 
 namespace App\Models;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Usuario extends Model
+class Usuario extends Model implements Authenticatable
 {
     use HasFactory;
+    protected $table = "usuarios";
 
     protected $fillable=[
          'name',
          'username',
          'cpf',
          'email',
-         'telephone',
-         'password'
+         'phone',
+         'password',
+         'adress'
     ];
 
     public function getAuthIdentifierName()
     {
+        //return $this->getKey();
         return 'id';
     }
     public function getAuthIdentifier()

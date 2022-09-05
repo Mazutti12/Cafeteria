@@ -8,22 +8,22 @@ use Illuminate\Support\Facades\Log;
 
 class ClienteService
 {
-   public function salvarUsuario(Usuario $user){
+   public function salvarUsuario(Usuario $usuario){
     try{
-        $dbUsuario = Usuario::where("username", $user->username)->first();
+        $dbUsuario = Usuario::where("username", $usuario->username)->first();
         if($dbUsuario){
-            return['status' => 'err' , 'message'=> 'Perfil já cadastrado.'];
+            return['status' => 'error' , 'message'=> 'Perfil já cadastrado.'];
         }
         DB::beginTransaction();
-        $user->save();
+        $usuario->save();
         DB::commit();
 
-        return['status' => 'ok' , 'message'=> 'Perfil criado com sucesso.'];
+        return['status' => 'sucess' , 'message'=> 'Perfil criado com sucesso.'];
     }catch(\Exception $e){
         Log::error("ERRO",['file' => 'ClienteService.salvarUsuario' , 'message'=> $e->getMessage() ]);
 
         DB::rollback();
-        return['status' => 'ok' , 'message'=> 'Não foi possível cadastrar o Perfil.'];
+        return['status' => 'error' , 'message'=> 'Não foi possível cadastrar o Perfil.'];
     }
 
     }
