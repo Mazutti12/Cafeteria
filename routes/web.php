@@ -22,6 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/cardapio', [ProdutosController::class, 'index'])->name('cardapio');
+Route::post('/carrinho/store/{produto_id}', [ProdutosController::class, 'store'])->name('adicionar_carrinho');
+Route::get('/carrinho/store/{produto_id}', [ProdutosController::class, 'store'])->name('adicionar_carrinho');
+Route::get('/carrinho', [ProdutosController::class, 'show'])->name('ver_carrinho');
+Route::get('/destroy/{id}', [ProdutosController::class, 'destroy'])->name('carrinho_destroy');
+Route::post('/carrinho/finalizar', [ProdutosController::class, 'finalizar'])->name('carrinho_finalizar');
 Route::get('/forum', [ForumController::class, 'index'])->name('forum');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login');

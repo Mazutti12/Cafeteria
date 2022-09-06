@@ -108,8 +108,7 @@
             <hr class="my-4">
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="same-address" name="adress">
-                <label class="form-check-label text-white" for="same-address">Concordo com os <a href="#">Termos de
-                        uso</a></label>
+                <label class="form-check-label text-white" for="same-address">Concordo com os <a href="#">Termos de uso</a></label>
             </div>
 
             <div class="form-check">

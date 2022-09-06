@@ -23,7 +23,7 @@
                 @endguest
                 @auth
                     <a href="{{ route('logout') }}" class="btn btn-outline-light me-2">LogOut</a>
-                    <a href="meus-pedidos.php">
+                    <a href="{{ route('ver_carrinho') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
                             class="bi bi-cart" viewBox="0 0 16 16">
                             <path
