@@ -55,4 +55,16 @@ class ProdutosController extends Controller
         $request->session()->flash($result["status"], $result["message"]);
         return redirect()->route('ver_carrinho');
     }
+    public function pagamento(Request $request){
+        $prods = session('cart', []);
+        $vendaService = new VendaService();
+        $result = $vendaService->finalizarVenda($prods, Auth::user());
+
+        if($result["status"] == "ok"){
+            $request->session()->forget("cart");
+        }
+
+        $request->session()->flash($result["status"], $result["message"]);
+        return view('pagamento');
+    }
 }

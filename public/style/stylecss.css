@@ -285,7 +285,7 @@ input:focus {
     height: auto;
     margin-top: 70px;
     margin-bottom: 60px;
-    height: 100vh;
+    min-height: 100vh;
 }
 .carrinho-container{
     margin: 0 auto;
@@ -342,4 +342,9 @@ input:focus {
     text-align: center;
     padding-top: 12.5px;
     border-radius: 2px;
+}
+
+.ncredito{
+    text-align: center;
+    color: white;
 }

@@ -27,6 +27,7 @@ Route::get('/carrinho/store/{produto_id}', [ProdutosController::class, 'store'])
 Route::get('/carrinho', [ProdutosController::class, 'show'])->name('ver_carrinho');
 Route::get('/destroy/{id}', [ProdutosController::class, 'destroy'])->name('carrinho_destroy');
 Route::post('/carrinho/finalizar', [ProdutosController::class, 'finalizar'])->name('carrinho_finalizar');
+Route::get('/pagamento', [ProdutosController::class, 'pagamento'])->name('pagamento');
 Route::get('/forum', [ForumController::class, 'index'])->name('forum');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login');

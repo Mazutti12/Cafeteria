@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="conteiner carrinho-container">
+        <div id="toast-carrinho" class="toast-meu"></div>
         <div class="div-center">
             <h3 class="h2-homepage">Suas compras</h3>
         </div>
@@ -26,7 +27,7 @@
                         <tr>
                             <td>{{ $sequencia++ }}</td>
                             <td>
-                                <a href="{{ route('carrinho_destroy', ['id' => $id]) }}" class="btn btn-sm" onclick="toast()">
+                                <a href="{{ route('carrinho_destroy', ['id' => $id]) }}" class="btn btn-sm" onclick="toast_destroy()">
                                     <i class="bi bi-trash3 color-white"></i>
                                 </a>
                             </td>
@@ -47,10 +48,7 @@
                     </tr>
             </table>
 
-            <form action="{{ route('carrinho_finalizar') }}" method="POST">
-                @csrf
-                <input type="submit" value="Finalizar Compra" class="btn btn-lg btn-success form-control">
-            </form>
+                <a href="{{ route('pagamento') }}" class="btn btn-lg btn-success form-control">Finalizar Pedido</a>
         @else
             @guest
             <p class="carrinho-p">Nenhum item no carrinho! Está na hora de

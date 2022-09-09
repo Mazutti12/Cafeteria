@@ -17,7 +17,7 @@
 
     <title>Bem-Vindo</title>
 
-    @yield("script")
 </head>
 
 <body>
+    @yield("script")
